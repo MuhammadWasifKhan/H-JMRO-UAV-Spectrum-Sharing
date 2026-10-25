@@ -1,0 +1,6 @@
+Original function counts: flight_time=54, convergence=55
+Shared identical functions: 40
+Flight-time-specific including entry point: 14
+Convergence-specific including entry point: 15
+Source bodies preserved except added path initialization in entry points.
+MATLAB runtime testing not performed.
