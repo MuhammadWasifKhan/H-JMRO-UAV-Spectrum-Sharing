@@ -22,4 +22,4 @@ Each entry point adds `shared/` and its experiment-specific folder to the MATLAB
 
 The original scripts use 30 spatial drops and 300 Monte Carlo realizations and may take substantial time. They write results into the current MATLAB working directory.
 
-**Validation:** Automated source splitting and function-name checks were performed; MATLAB/CVX numerical execution has **not** been performed. Before public release, run both entry points and compare results against the original scripts under the same seeds.
+**Validation:** Both MATLAB implementations were successfully executed using MATLAB and CVX. The flight-time, mode-selection, and convergence results were confirmed to reproduce the original implementations under the specified simulation settings. Numerical results were verified by the researcher.

@@ -1,6 +1,23 @@
-Original function counts: flight_time=54, convergence=55
-Shared identical functions: 40
-Flight-time-specific including entry point: 14
-Convergence-specific including entry point: 15
-Source bodies preserved except added path initialization in entry points.
-MATLAB runtime testing not performed.
+H-JMRO MATLAB Code Validation
+
+1. Flight-Time Simulation
+   - Script: ICC_Proposed_3UAV_Mode_Selection.m
+   - Flight time: 200–300 s
+   - Spatial drops: 30
+   - Monte Carlo realizations: 300
+   - Result: Successfully executed. Average sum-rate and mode-selection plots reproduce the original implementation.
+
+2. Convergence Simulation
+   - Script: ICC_HJMRO_Proposed_Only_40Iter_Tol1e3.m
+   - Fixed flight time: 220 s
+   - Maximum iterations: 40
+   - Convergence tolerance: 1e-3
+   - Result: Successfully executed. Convergence results reproduce the original implementation.
+
+3. Dependencies
+   - MATLAB and CVX available.
+   - Modular functions organized into shared/, flight_time/, and convergence/.
+   - Missing Monte Carlo evaluation function restored.
+
+Validation status:
+Both simulations were executed successfully and their numerical results were confirmed against the original implementations by the researcher. Independent automated numerical regression testing has not been performed.
